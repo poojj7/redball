@@ -1,0 +1,123 @@
+<DOCTYPEhtml> 
+<html>
+<head>
+<style>
+	
+	#redball{
+
+		position: absolute;
+		left: 50px;
+		top: 50px;
+	}
+</style>
+<title>Redball Zero Two</title>
+
+				<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+				<script>
+					$(document).ready(function() {
+						console.log("ready!");
+						$("#redball").fadeOut("slow");
+						$("#redball").fadeIn("slow");
+						$("#redball").animate({"left":"+=500px"},"slow");
+						$("#redball").animate({"left":"-=500px"},"slow");
+
+					});
+
+
+
+	</script>
+		</head>
+			<body>
+				Hello World!
+				<table border="2px;" align= "center">
+				<tr>
+				<td><button id="movediagupleft">Move NE</button></td>
+				<td><button id="moveup">Move Up</button></td>
+				<td><button id="movediagupright">Move NW</button></td>
+				<td><button id="square">Square</button></td>
+				
+				</tr>
+				<tr>
+				<td><button id="moveleft">Move Left</button></td>
+				<td><button id="sayhello">ButtOn</button></td>
+				<td><button id="moveright">Move Right</button></td>
+				<td><button id="triangle">Triangle</button></td>
+			
+				</tr>
+						<img id="redball" src="redball.jpg"/>
+				<tr>
+				<td><button id="movediagdownleft">Move SE</button></td>	
+				<td><button id="movedown">Move Down</button></td>
+				<td><button id="movediagdownright">Move SW</button></td>
+				<td><button id="bounce">Bounce</button></td>
+				</tr>
+				<tr>
+				<td><button id="hexagon">Hexagon</button></td>
+				<td><button id="rage">Rage</button></td>
+				<td><button id="drunk">Get Drunk</button></td>
+				<td><button id="octagon">Octagon</button></td>
+				</tr>
+				</table>
+
+				<script>
+					$("#moveleft").click(function() {
+						$("#redball").animate({"left":"-=50px"},"slow");
+					});
+					$("#moveright").click(function() {
+						$("#redball").animate({"left":"+=50px"},"slow");
+					});
+					$("#moveup").click(function() {
+						$("#redball").animate({"top":"-=50px"},"slow");
+					});
+					$("#movedown").click(function() {
+						$("#redball").animate({"top":"+=50px"},"slow");
+					});
+					$("#movediagupleft").click(function() {
+						$("#redball").animate({"top":"-=50px","left":"-=50px"},"slow");
+					});
+					$("#movediagupright").click(function() {
+						$("#redball").animate({"top":"-=50px","left":"+=50px"},"slow");
+					});
+					$("#movediagdownleft").click(function() {
+						$("#redball").animate({"top":"+=50px","left":"-=50px"},"slow");
+					});
+					$("#movediagdownright").click(function() {
+						$("#redball").animate({"top":"+=50px","left":"+=50px"},"slow");
+					});
+					$("#square").click(function() {
+						$("#redball").animate({"left":"-=100px"},"slow");
+						$("#redball").animate({"top":"+=100px"},"slow");
+						$("#redball").animate({"left":"+=100px"},"slow");
+						$("#redball").animate({"top":"-=100px"},"slow");
+					});
+					$("#triangle").click(function() {
+						$("#redball").animate({"top":"+=50px","left":"+=50px"},"slow");
+						$("#redball").animate({"left":"-=100px"},"slow");
+						$("#redball").animate({"top":"-=100px","left":"+=50px"},"slow");
+					});
+					$("#octagon").click(function() {
+						$("#redball").animate({"left":"-=50px"},"slow");
+                        $("#redball").animate({"left":"+=50px"},"slow");
+                        $("#redball").animate({"top":"-=50px"},"slow");
+                        $("#redball").animate({"top":"+=50px"},"slow");
+                        $("#redball").animate({"top":"-=50px","left":"-=50px"},"slow");
+                        $("#redball").animate({"top":"-=50px","left":"+=50px"},"slow");
+                        $("#redball").animate({"top":"+=50px","left":"-=50px"},"slow");
+                        $("#redball").animate({"top":"+=50px","left":"+=50px"},"slow");
+                    });
+
+
+
+						
+
+
+
+				</script>
+					
+				
+			</body>
+
+	</html>
+
+	
+

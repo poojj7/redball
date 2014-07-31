@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title> Red BallZero One</title>
+        <script>
+        function sayhello()
+        {
+        alert("Hi Janis");
+   	 }
+        function moveleft()
+        {
+        	redball.left=redball.left-30;
+
+        }
+		function moveright()
+		{
+		redball.left=redball.left+30;
+				}
+				function moveup()
+				{
+					redball.top=redball.top-30;
+				}
+				function movedown()
+				{
+					redball.top=redball.top+30;
+				}
+				function movediagdownright()
+				{
+					redball.top=redball.top+30;
+						redball.left=redball.left+30;
+				}
+				function movediagdownleft()
+				{
+					redball.top=redball.top+30;
+						redball.left=redball.left-30;
+				}
+				function movediagupleft()
+				{
+					redball.top=redball.top-30;
+						redball.left=redball.left-30;
+				}
+				function movediagupright()
+				{
+					redball.top=redball.top-30;
+						redball.left=redball.left+30;
+				}
+				function square()
+				{
+
+					for(i=0<8;ixt){
+						redball.left=redball.left+25;
+					redball.top=redball.top-50;
+						redball.left=redball.top-50;
+						redball.top=redball.top-50;
+						redball.left=redball.top-50;
+						redball.left=redball.top-50;
+						redball.left=redball.left-50;
+						redball.left=redball.left-50;
+						redball.left=redball.left-50;
+						redball.left=redball.left-50;
+						redball.left=redball.left-50;
+						redball.left=redball.top-50;
+						redball.left=redball.top-50
+						redball.left=redball.top-50
+						redball.left=redball.top-50
+						redball.left=redball.top-50
+						redball.left=redball.left-50
+						redball.left=redball.left-50
+						redball.left=redball.left-50
+						redball.left=redball.left-50
+						redball.left=redball.left-50
+
+					}
+					
+					function rageagainstwall()
+					for(i=0;i<26;i++){ // (counter; condition; incriment) Do the steps inside {} until condition is no longer met.
+					 	moveright();
+					 
+					}
+					}
+
+
+
+				}
+				function triangle()
+				{
+					for(i=0;i<8;itt){
+						movediagionalright();
+					}for(i=0;i<8;itt){
+						redball.top=redball.top+25
+						
+
+					}
+					redball.top=redball.top-50;
+						redball.left=redball.left+50;
+						redball.top=redball.top-50
+						redball.left=redball
+
+				}
+        </script>
+        <script src="http://lrn.icstars.org/redball.js"></script>
+     </head>
+     <body>
+<table border="2px;" align= "center">
+				<tr>
+				<td><button onclick="movediagupleft();">Move Diagupleft</button></td>
+				<td><button onclick="moveleft();">Move Left</button></td>
+				<td><button onclick="movediagdownleft();">Move DiagDownleft</button></td>
+				</tr>
+				<tr>
+				<td><button onclick="moveup();">Move Up</button></td>
+				<td><button onclick="sayhello();">Janis's Button</button></td>
+				<td><button onclick="movedown();">Move Down</button></td>
+				</tr>
+                
+        <img id="redball" src="RedBall.jpg"/>
+        <tr>
+				<td><button onclick="movediagupright();">Move Diagupright</button></td>
+				<td><button onclick="moveright();">Move Right</button></td>
+				<td><button onclick="movediagdownright();">Move DiagDownright</button></td>
+				</tr>
+<button onclick="square();">square</button>
+<button onclick="triangle();">triangle</button>
+<button onclick="rageagainstwall();">rageagainst</button>
+				</table>
+    </body>
+ </html>    
